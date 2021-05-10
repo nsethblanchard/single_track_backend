@@ -27,3 +27,4 @@ purchaseDate
 bikeType
 avgLifeInMiles
 reference to Customer
+ 
