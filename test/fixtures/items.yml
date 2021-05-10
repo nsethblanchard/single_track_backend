@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  price: 1
+  purchaseDate: 2021-05-10 12:19:59
+  bikeType: MyString
+  avgMileage: 1
+  customer: one
+
+two:
+  description: MyString
+  price: 1
+  purchaseDate: 2021-05-10 12:19:59
+  bikeType: MyString
+  avgMileage: 1
+  customer: two
