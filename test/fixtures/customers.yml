@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  store: one
+  name: MyString
+  email: MyString
+  phone: MyString
+  stravaURL: MyString
+  bikeStyle: MyString
+
+two:
+  store: two
+  name: MyString
+  email: MyString
+  phone: MyString
+  stravaURL: MyString
+  bikeStyle: MyString
