@@ -5,9 +5,13 @@ ruby '2.6.1'
 
 # makes the console look better
 gem 'hirb'
+gem 'fast_jsonapi'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3'
+
+
+
 # Use postgresql as the database for Active Record
 # gem 'pg', '~> 1.1'
 
