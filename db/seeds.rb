@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Store.destroy_all
+Customer.destroy_all
+Item.destroy_all
 
 store1 = Store.create(name: "Black Dog Bikes", phone: "540-887-8700", city: "Staunton")
 store2 = Store.create(name: "Shenandoah Bicycle Company", phone: "540-437-9000", city: "Harrisonburg")
