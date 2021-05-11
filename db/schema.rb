@@ -12,11 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2021_05_10_161959) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "customers", force: :cascade do |t|
-    t.bigint "store_id", null: false
+    t.integer "store_id", null: false
     t.string "name"
     t.string "email"
     t.string "phone"
@@ -33,7 +30,7 @@ ActiveRecord::Schema.define(version: 2021_05_10_161959) do
     t.datetime "purchaseDate"
     t.string "bikeType"
     t.integer "avgMileage"
-    t.bigint "customer_id", null: false
+    t.integer "customer_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["customer_id"], name: "index_items_on_customer_id"
