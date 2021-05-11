@@ -2,7 +2,7 @@ class Api::StoresController < ApplicationController
 
     def index
         stores = Store.all
-        render json: stores
+        render json: StoreSerializer.new(stores)
     end
 
     def create

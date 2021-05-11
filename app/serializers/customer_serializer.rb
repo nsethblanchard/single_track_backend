@@ -1,4 +1,4 @@
 class CustomerSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :store_id, :name, :email, :phone, :stravaURL, :bikeStyle
 end
