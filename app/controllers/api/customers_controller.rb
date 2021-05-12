@@ -22,4 +22,3 @@ class Api::CustomersController < ApplicationController
     end
 end
 
-end
