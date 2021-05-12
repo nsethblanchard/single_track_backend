@@ -1,5 +1,10 @@
 class Api::StoresController < ApplicationController
 
+    def show
+        store = Store.find_by(id: params[:id])
+        render json: StoreSerializer.new(store)
+    end
+
     def index
         stores = Store.all
         render json: StoreSerializer.new(stores)
