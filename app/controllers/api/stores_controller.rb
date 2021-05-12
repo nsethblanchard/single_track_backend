@@ -3,6 +3,13 @@ class Api::StoresController < ApplicationController
     def index
         stores = Store.all
         render json: StoreSerializer.new(stores)
+        # could also use below to grab associations...instead of just adding to serializer
+        # a little more nesting and specificity this way but complicated for this size application
+
+        # options = {
+        #     include: [:customers]
+        # }
+        # render json: StoreSerializer.new(stores, options)
     end
 
     def create

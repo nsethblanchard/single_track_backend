@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :stores
+    resources :customers
   end
 end
