@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
+gem 'pry'
+
 # makes the console look better
 gem 'hirb'
 gem 'fast_jsonapi'
