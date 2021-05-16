@@ -17,7 +17,7 @@ cust1 = Customer.create(name: "Seth", email: "email@email.com", phone: "540-849-
 cust2 = Customer.create(name: "Jonathan", email: "bremail@email.com", phone: "540-849-0000", stravaURL: "JSteetch", bikeStyle: "road", store_id: store1.id)
 cust3 = Customer.create(name: "Caity", email: "tremail@email.com", phone: "540-849-0039", stravaURL: "Caitlin Blancahrd", bikeStyle: "cruiser", store_id: store1.id)
 
-item1 = Item.create(description: "Specialized Tarmac Comp", price: 3500, bikeType: "Road", avgMileage: 25000, customer_id: cust1)
-item2 = Item.create(description: "Trek Madone", price: 2200, bikeType: "Road", avgMileage: 25000, customer_id: cust2)
-item3 = Item.create(description: "Cruiser Bike", price: 500, bikeType: "Cruiser", avgMileage: 10000, customer_id: cust3)
+# item1 = Item.create(description: "Specialized Tarmac Comp", price: 3500, bikeType: "Road", avgMileage: 25000, customer_id: cust1)
+# item2 = Item.create(description: "Trek Madone", price: 2200, bikeType: "Road", avgMileage: 25000, customer_id: cust2)
+# item3 = Item.create(description: "Cruiser Bike", price: 500, bikeType: "Cruiser", avgMileage: 10000, customer_id: cust3)
 
