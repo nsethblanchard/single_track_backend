@@ -13,7 +13,10 @@ class Api::CustomersController < ApplicationController
             render json: {errors: customer.errors.full_messages}, status: :unprocessable_entity
             # server understands context and syntax was correct but was unable to process (error 422 -unprocessable_entity)
         end
+    end
 
+    def destroy
+        customer = Customer.find(params[:id]).destroy
     end
 
     private
