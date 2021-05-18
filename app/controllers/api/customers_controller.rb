@@ -22,7 +22,7 @@ class Api::CustomersController < ApplicationController
     private
 
     def customer_params
-        params.require(:customer).permit(:store_id, :name, :email, :phone, :stravaURL, :bikeStyle)
+        params.require(:customer).permit(:store_id, :name, :phone, :bike_style)
     end
 end
 

@@ -15,10 +15,8 @@ ActiveRecord::Schema.define(version: 2021_05_10_161959) do
   create_table "customers", force: :cascade do |t|
     t.integer "store_id", null: false
     t.string "name"
-    t.string "email"
     t.string "phone"
-    t.string "stravaURL"
-    t.string "bikeStyle"
+    t.string "bike_style"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["store_id"], name: "index_customers_on_store_id"
@@ -27,9 +25,9 @@ ActiveRecord::Schema.define(version: 2021_05_10_161959) do
   create_table "items", force: :cascade do |t|
     t.string "description"
     t.integer "price"
-    t.datetime "purchaseDate"
-    t.string "bikeType"
-    t.integer "avgMileage"
+    t.datetime "purchase_date"
+    t.string "bike_type"
+    t.integer "avg_mileage"
     t.integer "customer_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
