@@ -25,7 +25,11 @@ class Api::StoresController < ApplicationController
             render json: {errors: store.errors.full_messages}, status: :unprocessable_entity
             # server understands context and syntax was correct but was unable to process (error 422 -unprocessable_entity)
         end
+    end
 
+    def destroy
+        store = Store.find(params[:id]).destroy
+        render json: store
     end
 
     private
