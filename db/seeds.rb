@@ -16,6 +16,8 @@ store2 = Store.create(name: "Shenandoah Bicycle Company", phone: "540-437-9000",
 cust1 = Customer.create(name: "Seth", phone: "540-849-8929", bike_style: "road and mountain", store_id: store1.id)
 cust2 = Customer.create(name: "Jonathan", phone: "540-849-0000", bike_style: "road", store_id: store1.id)
 cust3 = Customer.create(name: "Caity", phone: "540-849-0039", bike_style: "cruiser", store_id: store2.id)
+cust3 = Customer.create(name: "Asa", phone: "540-849-0038", bike_style: "mountain", store_id: store2.id)
+cust3 = Customer.create(name: "Felix", phone: "540-849-0037", bike_style: "road and mountain", store_id: store2.id)
 
 # item1 = Item.create(description: "Specialized Tarmac Comp", price: 3500, bike_type: "Road", avg_mileage: 25000, customer_id: cust1)
 # item2 = Item.create(description: "Trek Madone", price: 2200, bike_type: "Road", avg_mileage: 25000, customer_id: cust2)
